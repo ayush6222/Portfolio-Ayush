@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional base styles */
+:root {
+  --bg: #ffffff;
+  --muted: #6b7280;
+}
+html, body, #__next {
+  height: 100%;
+}
+body {
+  @apply bg-white text-gray-900 antialiased;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  @apply text-indigo-600 hover:underline;
+}
