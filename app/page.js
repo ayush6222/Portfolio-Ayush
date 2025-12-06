@@ -1,7 +1,11 @@
-export default function Home() {
+import Hero from "./components/Hero";
+import AboutHighLight from "./components/AboutHighlight"
+
+export default function Page() {
   return (
-    <main className="flex items-center justify-center min-h-screen">
-      <h1 className="text-4xl font-bold">Portfolio Start</h1>
+    <main>
+      <Hero />
+      <AboutHighLight/>
     </main>
   );
 }
