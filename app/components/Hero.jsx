@@ -76,19 +76,41 @@ export default function Hero() {
             {heroData.heroTitle}
           </p>
 
-          <div className="flex gap-3 mt-8">
-            {socialLinks.map((item) => (
-              <a
-                key={item.id}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-gray-200 dark:bg-gray-700 rounded-lg shadow-md transition-all duration-300 hover:scale-110 hover:rotate-3 hover:shadow-xl hover:-translate-y-1"
-              >
-                <Image src={item.icon} width={22} height={22} alt={item.label} />
-              </a>
-            ))}
-          </div>
+        <motion.div
+  initial="hidden"
+  animate="visible"
+  variants={{
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.12 } }
+  }}
+  className="flex gap-3 mt-8"
+>
+  {socialLinks.map((item) => (
+    <motion.a
+      key={item.id}
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 }
+      }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="
+        w-10 h-10 md:w-12 md:h-12 
+        flex items-center justify-center
+        bg-gray-200 dark:bg-gray-700 
+        rounded-lg shadow-md
+        transition-all duration-300
+        hover:scale-110 hover:rotate-3
+        hover:shadow-xl hover:-translate-y-1
+      "
+    >
+      <Image src={item.icon} width={22} height={22} alt={item.label} />
+    </motion.a>
+  ))}
+</motion.div>
+
         </motion.div>
 
         {/* RIGHT SECTION */}

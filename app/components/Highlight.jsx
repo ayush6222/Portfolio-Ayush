@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useContentStore } from "../store/useContentStore";
 
 export default function AboutHighlight() {
-  const aboutHighlightData = useContentStore((s) => s.about);
+  const aboutHighlightData = useContentStore((s) => s.highlight);
   const [showLong, setShowLong] = useState(false);
 
   return (
@@ -37,6 +37,14 @@ export default function AboutHighlight() {
                 className="mt-4 py-1.5 px-4 tracking-widest border-t border-b transition text-[#111] border-[#111] dark:text-white dark:border-white hover:opacity-70"
               >
                 READ MORE
+              </button>
+            )}
+                {showLong && (
+              <button
+                onClick={() => setShowLong(false)}
+                className="mt-4 py-1.5 px-4 tracking-widest border-t border-b transition text-[#111] border-[#111] dark:text-white dark:border-white hover:opacity-70"
+              >
+                READ LESS
               </button>
             )}
           </div>
