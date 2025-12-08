@@ -1,5 +1,8 @@
 import "./globals.css";
 import Header from "./components/Header";
+import ScrollProgressBar from "./components/ScrollProgressBar";
+import Footer from "./components/Footer";
+
 
 export const metadata = {
   title: "Ayush's Portfolio",
@@ -11,10 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-white dark:bg-black transition-colors">
         <Header />
-        {/* Add padding to push hero below navbar */}
+        <ScrollProgressBar />
         <div className="pt-20">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

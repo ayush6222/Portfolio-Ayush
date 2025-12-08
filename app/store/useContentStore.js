@@ -3,11 +3,9 @@ import { create } from "zustand";
 export const useContentStore = create(() => ({
   header: {
     logoText: "AJ",
-    navLinks: [
-      { label: "About", href: "#about" },
-      { label: "Skills", href: "#skills" },
-      { label: "Projects", href: "#projects" },
-    ],
+    about: "About",
+    skills: "Skills",
+    projects: "Projects",
     contactButton: "Contact Me",
   },
 
@@ -56,6 +54,12 @@ export const useContentStore = create(() => ({
       label: "Download Resume",
       href: "https://drive.google.com/file/d/1_LqHu4aS7mRxF8QBNv6mw2_2nbvwFCb-/view?usp=sharing",
       icon: "/social/download.svg",
+    },
+    {
+      id: "mail",
+      label: "Email",
+      href: "mailto:ayush42837272@gmail.com",
+      icon: "/social/email.svg",
     },
   ],
 
