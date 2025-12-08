@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FiSun, FiMoon } from "react-icons/fi";
 import useTheme from "../hooks/usetheme";
 import { useContentStore } from "../store/useContentStore";
-import { head } from "framer-motion/client";
 
 export default function Header() {
   const [open, setOpen] = useState(false);

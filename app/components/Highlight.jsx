@@ -56,26 +56,36 @@ export default function AboutHighlight() {
           <div className="w-[30%] flex justify-end">
 
             {/* CLICK AJ → collapse back */}
-            <div
-              onClick={() => setShowLong(false)}
-              className="cursor-pointer hover:opacity-60 transition
-                text-black dark:text-white opacity-[0.12] dark:opacity-[0.2]
-                w-[180px] h-[180px] md:w-[220px] md:h-[220px]"
-            >
-              <svg width="100%" height="100%" viewBox="0 0 300 300" fill="none">
-                <rect
-                  x="50" y="50" width="200" height="200"
-                  stroke="currentColor" strokeWidth="20" rx="40"
-                />
-                <text
-                  x="80" y="185"
-                  fontSize="110" fontWeight="700"
-                  fill="currentColor"
-                >
-                  AJ
-                </text>
-              </svg>
-            </div>
+        {/* AJ BLOCK (30%) */}
+<div className="w-[30%] flex justify-end">
+
+  <div
+    onClick={() => setShowLong(false)}
+    className="
+      cursor-pointer transition 
+      text-black dark:text-white 
+      opacity-[0.12] dark:opacity-[0.35]   /* brighter in dark mode */
+      hover:opacity-60
+      w-[180px] h-[180px] md:w-[220px] md:h-[220px]
+    "
+  >
+    <svg width="100%" height="100%" viewBox="0 0 300 300" fill="none">
+      <rect
+        x="50" y="50" width="200" height="200"
+        stroke="currentColor" strokeWidth="20" rx="40"
+      />
+      <text
+        x="80" y="185"
+        fontSize="110" fontWeight="700"
+        fill="currentColor"
+      >
+        AJ
+      </text>
+    </svg>
+  </div>
+
+</div>
+
           </div>
         </div>
       </div>

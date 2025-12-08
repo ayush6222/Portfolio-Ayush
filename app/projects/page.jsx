@@ -6,7 +6,7 @@ export default function ProjectsRoute() {
     <main className="min-h-screen bg-white dark:bg-black">
       <Header />
 
-      <div className="pt-28 max-w-7xl mx-auto px-6">
+      <div className="pt-10 max-w-7xl mx-auto px-6">
         <ProjectsPageContent />
       </div>
     </main>
