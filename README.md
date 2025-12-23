@@ -7,7 +7,7 @@ The portfolio focuses on clean UI, responsive layouts, subtle animations, and sc
 ---
 
 ## 🚀 Live Demo
-🔗 **Portfolio:** https://ayushjaiswal.vercel.app/
+🔗 **Portfolio:** https://ayush-jaiswal.vercel.app/
 
 ---
 
