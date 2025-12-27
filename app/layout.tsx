@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     "Ayush Jaiswal JavaScript Developer",
     "Ayush Jaiswal TypeScript",
     "Ayush Jaiswal Web Developer",
+    "Frontend Developer",
   ],
   authors: [{ name: "Ayush Jaiswal" }],
   creator: "Ayush Jaiswal",
