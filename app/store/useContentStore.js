@@ -271,5 +271,35 @@ export const useContentStore = create(() => ({
       ],
       liveLink: "https://web.umang.gov.in/landing/",
     },
+    {
+      id: 6,
+      name: "Portfolio Website",
+      description:
+        "Built a responsive portfolio website using Next.js, showcasing projects and skills. Implemented dark mode support and optimized performance for fast loading.",
+      tech: [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Vercel",
+        
+      ],
+      mainImage: "/Projects/Portfolio/logo.png",
+      logo: "/Projects/Portfolio/logo.png",
+      images: [
+        { id: 1, url: "/Projects/Portfolio/1.png" },
+        { id: 2, url: "/Projects/Portfolio/2.png" },
+        { id: 3, url: "/Projects/Portfolio/3.png" },
+        { id: 4, url: "/Projects/Portfolio/4.png" },
+        { id: 5, url: "/Projects/Portfolio/5.png" },
+        { 
+          id: 6, url: "/Projects/Portfolio/6.png"
+        }
+
+      ],
+      liveLink: "https://ayushjaiswal.vercel.app/",
+      github:"https://github.com/ayush42837272-eng/Portfolio-Ayush"
+    },
   ],
 }));
