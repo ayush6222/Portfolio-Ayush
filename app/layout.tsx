@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import Header from "./components/Header";
 import ScrollProgressBar from "./components/ScrollProgressBar";
 import Footer from "./components/Footer";
@@ -92,6 +93,7 @@ export default function RootLayout({
         <ScrollProgressBar />
         <div className="pt-20">{children}</div>
         <Footer />
+        <Analytics />
 
       </body>
     </html>
