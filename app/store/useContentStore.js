@@ -46,7 +46,7 @@ export const useContentStore = create(() => ({
     {
       id: "github",
       label: "GitHub",
-      href: "https://github.com/ayush42837272-eng",
+      href: "https://github.com/ayush6222",
       icon: "/social/github.svg",
     },
     {
